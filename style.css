@@ -1,0 +1,150 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* BANNER */
+#banner-section {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#banner-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#banner-section h3 {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* SECTION TITLES */
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 28px;
+}
+
+/* ABOUT SECTION */
+#about-me-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* PROFILE IMAGE */
+#about-me-section img {
+  border-radius: 50%;
+  border: 5px solid #2a5298;
+  transition: transform 0.3s ease;
+}
+
+#about-me-section img:hover {
+  transform: scale(1.1);
+}
+
+/* ABOUT TEXT */
+#about-me-section p {
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+#wagon {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2a5298;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#wagon:hover {
+  background: #1e3c72;
+}
+
+/* PASSION SECTION */
+#my-passion-section {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+#my-passion-section ol {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#my-passion-section li {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+#my-passion-section li:hover {
+  transform: translateY(-5px);
+}
+
+/* SOCIALS */
+#socials-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background: #2a5298;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #1e3c72;
+}
+
+/* FOOTER */
+#footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e3c72;
+  color: white;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #about-me-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #my-passion-section ol {
+    flex-direction: column;
+  }
+}
